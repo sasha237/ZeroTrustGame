@@ -1,0 +1,13 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "noEmit": true,
+    "paths": {
+      "@bot/engine": ["../engine/src/index.ts"]
+    }
+  },
+  "include": [
+    "src",
+    "test"
+  ]
+}

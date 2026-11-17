@@ -1,0 +1,26 @@
+{
+  "name": "balance-of-terror",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "tsc -p packages/engine/tsconfig.json && tsc -p packages/client/tsconfig.json && tsc -p packages/server/tsconfig.json && tsc -p packages/sim/tsconfig.json",
+    "build": "tsc -p packages/engine/tsconfig.build.json && npm --workspace @bot/server run build && npm --workspace @bot/client run build && npm --workspace @bot/sim run build",
+    "dev": "npm --workspace @bot/client run dev",
+    "dev:server": "npm --workspace @bot/server run dev",
+    "start": "npm --workspace @bot/server run start",
+    "sim": "npm run sim --workspace @bot/sim",
+    "test:e2e": "playwright test",
+    "lh": "node tools/run-lighthouse.mjs"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "lighthouse": "^13.5.0",
+    "typescript": "^5.6.0",
+    "vitest": "^2.1.0"
+  }
+}

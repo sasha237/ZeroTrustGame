@@ -1,0 +1,20 @@
+node_modules/
+dist/
+*.tsbuildinfo
+npm-debug.log*
+.DS_Store
+
+# E2E / Lighthouse artifacts (debt closure, WORKING_PLAN §13)
+e2e/screenshots/
+playwright-report/
+test-results/
+packages/sim/sim-report.md
+packages/sim/sim-report.json
+.lh-tmp/
+
+AGENTS.md
+ANSWERS.md
+ANSWERS2.md
+ANSWERS3.md
+GAPS.md
+WORKING_PLAN.md
