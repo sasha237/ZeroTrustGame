@@ -122,10 +122,6 @@ npm run lh           # Lighthouse (переопределяет TMP из-за EP
 
 Архитектура, TLS, reverse proxy и эксплуатация — в [`docs/deploy.md`](docs/deploy.md). Кратко: TLS терминирует reverse proxy (nginx/traefik), прокси маршрутизирует `/api/*` и `/ws` в контейнер сервера, статику — в CDN/статик-сервер; `TRUST_PROXY=true` при такой схеме; Postgres — managed или compose-volume с бэкапами.
 
-## Происхождение и атрибуция
-
-Механика — ребилд тренажёра «Balance of Terror» (Naval Postgraduate School, Global ECCO) с его же разрешения на переработку; сеттинг, тексты, визуал и код — оригинальные («Zero Trust»). Архивные материалы NPS (PDF, скриншоты оригинала) в репозиторий не входят.
-
 ## Лицензия
 
 MIT
