@@ -104,7 +104,7 @@ node tools/serve-static.mjs   # отдаёт packages/client/dist на :8090
 | `TRUST_PROXY` | выкл. | `true`/`1` — доверять заголовкам прокси (Rate limit / IP за TLS-терминирующим прокси) |
 | `CLIENT_URL` | `http://localhost:5173` | база для ссылок сброса пароля |
 | `EMAIL_API_URL`, `EMAIL_API_KEY` | — | HTTP-провайдер писем (SendGrid-стиль). Без них — log-only режим |
-| `EMAIL_FROM` | `no-reply@balanceofterror.local` | отправитель писем |
+| `EMAIL_FROM` | `no-reply@hos.local` | отправитель писем |
 
 Конфигурация валидируется при старте: ошибка — fail-fast с понятным сообщением.
 
